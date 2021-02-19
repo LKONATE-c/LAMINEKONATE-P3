@@ -3,7 +3,7 @@
     src: url("/font/Shrikhand-Regular.otf") format("OpenType")
   }
 
-body {
+  body {
     margin-left: 2%;
   }
 
@@ -34,17 +34,9 @@ header {
   width: 150px;
 }
 .photo-arrière-plan{
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url("restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: contain;
-    background-position: top;
-    
-}
 
-.menu-A{
+}
+.menu-B{
 
     justify-content:space-between ;
     background-color:#EEEAE9; 
