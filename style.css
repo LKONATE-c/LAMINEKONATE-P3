@@ -1,3 +1,11 @@
+@font-face{
+  font-family:Shrikhand;
+  src: url("/font/Shrikhand-Regular.otf") format("OpenType")
+}
+@font-face{
+  font-family:"Robot-black";
+  src: url("/font/Robot-black.ttf") format("truetype")
+}
 body {
   background: white;
   margin-left: 2%;
@@ -6,6 +14,7 @@ body {
 h1 {
   font-size: 1.5rem;
   text-align: center;
+  font-family:"Shrikhand",arial,serif,sans-serif;
 }
 
 header {
@@ -60,6 +69,7 @@ header {
 h2 {
   margin-left: 20px;
   font-size: 1rem;
+  font-family:"Shrikhand",arial,serif,sans-serif;
 }
 .btn-fct
 {

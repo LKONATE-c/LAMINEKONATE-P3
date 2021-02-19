@@ -1,14 +1,20 @@
 @font-face{
-    font-family:Shrikhand;
+    font-family:"Shrikhand";
     src: url("/font/Shrikhand-Regular.otf") format("OpenType")
   }
+  @font-face{
+    font-family:"Robot-black";
+    src: url("/font/Robot-black.ttf") format("truetype")
+}
 
 body {
     margin-left: 2%;
+    font-family:"Robot-black",arial,serif,sans-serif;
   }
 
 h1,h2{
     margin-left: 4%;
+    font-family:"Shrikhand",arial,serif,sans-serif;
 }
 header {
   margin-bottom: 20px;
