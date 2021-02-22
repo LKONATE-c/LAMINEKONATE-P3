@@ -26,24 +26,28 @@ header {
   justify-content: space-around;
 }
 
-.btn-retour {
+.header-btn-retour {
   display: none;
+}
+.header-img-logo{
+  padding-right: 40px;
 }
 
 .logo-food{
   height: 30px;
   width: 150px;
 }
+
  
 
 
-.nav {
+.presentation {
   background-color: #EEEAE9;
   border: 1px solid #EEEAE9;
   height: 250px;
 }
 
-.icone-saisie {
+.presentation-icone-saisie {
   text-align: center;
   background-color: #DBD6D5;
   border: solid 1px #DBD6D5;
@@ -54,11 +58,11 @@ header {
   background-color: transparent;
 }
 
-.recherche{
+.presentation-recherche{
   text-align: center;
 }
 
-.btn-explorer {
+.presentation-btn-explorer {
   border-radius: 20px;
   background-color: #AD77C8;
   color: white;
@@ -66,11 +70,22 @@ header {
   padding: 0.5rem;
 }
 
-h2 {
-  margin-left: 20px;
+.operation{
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,h3 {
+
+  margin-left: 30px;
   font-size: 1rem;
+  padding-top: 20px;
   font-family:"Shrikhand",arial,serif,sans-serif;
 }
+
+
 .btn-fct
 {
     display: flex;
@@ -98,6 +113,8 @@ h2 {
     height: 20px;
     width: 20px;
     text-align: center;
+    position: relative;
+    right: 10px;
 }
 
   .fa-mobile-alt,.fa-list-ul
@@ -118,21 +135,29 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
   }
-  .nom-restau{
+  .carte-restau{
      
     background-color: white;
-    height: 180px;
+    height: 150px;
     width: 200px;
     margin: 4% 4%;
     border-radius:  20px 20px ;
-    padding-bottom: 7em;
+    padding-bottom: 3em;
     border: 1px solid #ddd;
     text-align:left;
-    box-shadow: 0 4px 4px #ddd ;
+    box-shadow: 0 6px 6px #ddd ;
   }
-
+  .nom-restau{
+    display: flex;
+    justify-content: space-around;
+    
+  }
+ 
+  .ville-restau{
+    padding-left: 20px;
+  }
   .restau-photo{
-    height: 180px;
+    height: 150px;
     width: 200px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -145,15 +170,24 @@ h2 {
     flex-direction: row;
     color: white;
   }
-  .propo-restau,.partenaire,.memtion,.contact{
-    padding-top: 10px;
+  .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
+    padding-top: 35px;
   }
-  .contact{
+  .endtext-contact{
     padding-right: 20px;
     color: white;
   }
 
-@media only screen and (max-width: 510px) {
+  @media only screen and (min-width:822px) and (max-width:1220px){
+    .carte-restau{
+      margin-left:10%;
+      margin-right: 10%;
+    }
+
+  }
+  
+
+@media only screen and (max-width: 610px) {
   .btn-retour {
     padding-left: 20px;
     padding-right: 30px;
@@ -168,16 +202,23 @@ h2 {
     padding-left: 50px;
     padding-right: 50px;
   }
+  
+  .operation{
+    display: block;
+  }
+  
   .choix-restau{
-    flex-direction:column ;
+    margin-left: 6%;
+    justify-content:normal;
+    
   }
   .endtext{
     flex-direction: column;
    
   }
-  .propo-restau,.partenaire,.memtion,.contact{
+  .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
     padding-top: 10px;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 }
 

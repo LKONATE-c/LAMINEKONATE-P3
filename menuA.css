@@ -12,9 +12,11 @@ body {
     font-family:"Robot-black",arial,serif,sans-serif;
   }
 
-h1,h2{
+h1,h2,h3{
     margin-left: 4%;
     font-family:"Shrikhand",arial,serif,sans-serif;
+    font-size: 1em;
+    padding-top: 15px;
 }
 header {
   margin-bottom: 20px;
@@ -39,14 +41,14 @@ header {
   height: 30px;
   width: 150px;
 }
-.photo-arrière-plan{
+.photo-plat-restau{
     height: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
-    background-size: contain;
-    background-position: top;
+    position: relative;
+    top: 50px;
+    Z-INDEX: -1;
     
 }
 
@@ -57,11 +59,13 @@ header {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: auto;
+    
 }
 
-.nom-heart{
+.nom-restau-heart{
     display: flex;
     justify-content: space-between;
+    align-items: center;
    
 }
 .fa-heart{
@@ -73,7 +77,7 @@ header {
     
     border-radius: 10px;
     background-color:white;
-    width: 300px;
+    width: 290px;
     height: 50px;
     margin-top: 10px;
     padding-left: 5px;
@@ -117,7 +121,7 @@ header {
     color: white;
   }
   .propo-restau,.partenaire,.memtion,.contact{
-    padding-top: 20px;
+    padding-top: 30px;
   }
   .contact{
     padding-right: 20px;
@@ -125,7 +129,7 @@ header {
   }
 
 
-@media only screen and (max-width: 610px){
+@media only screen and (max-width: 630px){
     
 
     .fa-heart{
