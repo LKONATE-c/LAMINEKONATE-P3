@@ -8,7 +8,15 @@
 }
 body {
   background: white;
-  margin-left: 2%;
+  font-family:"Robot-black",arial,serif,sans-serif;
+}
+  
+
+
+a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
 
 h1 {
@@ -115,6 +123,8 @@ h2,h3 {
     text-align: center;
     position: relative;
     right: 10px;
+    background-color:#9356DC  ;
+    color: white;
 }
 
   .fa-mobile-alt,.fa-list-ul
@@ -123,7 +133,7 @@ h2,h3 {
   }
   .fa-store
   {
-    color: purple;
+    color: #9356DC ;
   }
   .restaurant{
     background-color:#DBD6D5;
@@ -140,12 +150,21 @@ h2,h3 {
     background-color: white;
     height: 150px;
     width: 200px;
-    margin: 4% 4%;
     border-radius:  20px 20px ;
     padding-bottom: 3em;
     border: 1px solid #ddd;
-    text-align:left;
     box-shadow: 0 6px 6px #ddd ;
+    object-fit: cover;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .restau-photo{
+    height: 150px;
+    width: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
   }
   .nom-restau{
     display: flex;
@@ -154,14 +173,24 @@ h2,h3 {
   }
  
   .ville-restau{
-    padding-left: 20px;
+    padding-left: 25px;
   }
-  .restau-photo{
-    height: 150px;
-    width: 200px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+
+  .ville-restau-cite-rouge{
+    padding-left: 30px;
   }
+  .new-restau{
+    border: 1px solid #99E2D0 ;
+    border-radius: 5px;
+    background-color:#99E2D0 ;
+    width: 80px;
+    position: relative;
+    left: 110px;
+    bottom: 180px;
+    color: green;
+    text-align: center;
+  }
+  
   .endtext{
     border:1px solid #F2F2F2;
     background-color: black;
@@ -207,11 +236,17 @@ h2,h3 {
     display: block;
   }
   
-  .choix-restau{
-    margin-left: 6%;
-    justify-content:normal;
-    
+
+  .carte-restau,.restau-photo{
+    width: 80vw;
   }
+   
+  .new-restau{
+    left: 160px;
+  }
+    
+  
+  
   .endtext{
     flex-direction: column;
    

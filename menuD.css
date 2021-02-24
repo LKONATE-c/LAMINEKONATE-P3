@@ -7,13 +7,15 @@
     src: url("/font/Robot-black.ttf") format("truetype")
 }
   body {
-    margin-left: 2%;
+   
     font-family:"Robot-black",arial,serif,sans-serif;
   }
 
 h1,h2,h3{
     margin-left: 4%;
     font-family:"Shrikhand",arial,serif,sans-serif;
+    font-size: 1em;
+    padding-top: 15px;
 }
 }
 header {
@@ -25,8 +27,9 @@ header {
   justify-content: space-around;
 }
 
-.btn-retour {
-  
+.btn-retour-accueil {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .img-logo{    display: block;
   margin-right: auto;
@@ -39,8 +42,11 @@ header {
   height: 30px;
   width: 150px;
 }
-.photo-arrière-plan{
-
+.photo-plat-restau{
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .menu-D{
 
@@ -49,9 +55,11 @@ header {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: auto;
+    position: relative;
+    bottom: 60px;
 }
 
-.nom-heart{
+.nom-restau-heart{
     display: flex;
     justify-content: space-between;
    
@@ -65,7 +73,7 @@ header {
     
     border-radius: 10px;
     background-color:white;
-    width: 300px;
+    width: 290px;
     height: 50px;
     margin-top: 10px;
     padding-left: 5px;
@@ -118,7 +126,9 @@ header {
 
 
 @media only screen and (max-width: 630px){
-    
+    body{
+      background-color: #EEEAE9;
+  }
 
     .fa-heart{
         

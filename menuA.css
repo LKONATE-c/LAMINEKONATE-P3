@@ -8,7 +8,7 @@
 }
 
 body {
-    margin-left: 2%;
+     
     font-family:"Robot-black",arial,serif,sans-serif;
   }
 
@@ -19,7 +19,8 @@ h1,h2,h3{
     padding-top: 15px;
 }
 header {
-  margin-bottom: 20px;
+  
+  background-color: white;
 }
 
 .header-logo {
@@ -27,8 +28,9 @@ header {
   justify-content: space-around;
 }
 
-.btn-retour {
-  
+.btn-retour-accueil {
+  padding-top: 10px;
+  padding-left: 10px;
 }
 .img-logo{    display: block;
   margin-right: auto;
@@ -46,10 +48,6 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
-    top: 50px;
-    Z-INDEX: -1;
-    
 }
 
 .menu-A{
@@ -59,7 +57,8 @@ header {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: auto;
-    
+    position: relative;
+    bottom: 60px;
 }
 
 .nom-restau-heart{
@@ -130,7 +129,9 @@ header {
 
 
 @media only screen and (max-width: 630px){
-    
+  body{
+    background-color: #EEEAE9;
+  }
 
     .fa-heart{
         
