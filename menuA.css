@@ -109,11 +109,13 @@ header {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    background: rgb(255,121,196);
     background: linear-gradient(162deg, rgba(255,121,196,0.9836309523809523) 1%, rgba(147,86,220,1) 35%);
-    
+   
   }
-
+  .btn-cde:hover{
+    background: #AD310B;
+    transition: background-color 1000ms linear;
+  }
 
 .endtext{
     border:1px solid #F2F2F2;
