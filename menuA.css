@@ -99,6 +99,7 @@ header {
     margin-right: 40%;
     margin-left: 40%;
     padding-bottom: 30px;
+    
 }
 .btn-cde{
     border-radius: 20px;
@@ -110,7 +111,10 @@ header {
     display: block;
     background: rgb(255,121,196);
     background: linear-gradient(162deg, rgba(255,121,196,0.9836309523809523) 1%, rgba(147,86,220,1) 35%);
-}
+    
+  }
+
+
 .endtext{
     border:1px solid #F2F2F2;
     background-color: black;
