@@ -12,6 +12,27 @@ body {
   font-family:"Robot-black",arial,sans-serif;
 }
 
+.loader{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background:white;
+  animation: load-page 3s 100ms;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}
+
+@keyframes load-page{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+
+
 
 
 .loader-circle{
@@ -28,7 +49,7 @@ body {
   border-top-color: #99E2D0;
   border-bottom-color: #9356DC;
   z-index: 1;
-  animation: spinner 3S 100ms ease ;
+  animation: spinner 3S 100ms linear;
   animation-fill-mode: forwards;
   
 }
@@ -177,7 +198,7 @@ h2,h3 {
      
     background-color: white;
     height: 150px;
-    width: 200px;
+    width: 250px;
     border-radius:  20px 20px ;
     padding-bottom: 3em;
     border: 1px solid #ddd;
@@ -191,7 +212,7 @@ h2,h3 {
   }
   .restau-photo{
     height: 150px;
-    width: 200px;
+    width: 250px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -204,17 +225,17 @@ h2,h3 {
  
   .ville-restau-menil{
     position: absolute;
-    left: 10%;
+    left: 13%;
   }
   .ville-restau-char-folie{
     position: absolute;
-    left: 8%;
+    left: 12%;
 
   }
 
   .ville-restau-cite-rouge{
     position: absolute;
-    left: 12%;
+    left: 15%;
   }
   .new-restau{
     border: 1px solid #99E2D0 ;
@@ -283,11 +304,11 @@ h2,h3 {
     display: block;
   }
   
-
+  /*
   .carte-restau,.restau-photo{
     width: 80vw;
   }
-   
+   */
   .new-restau{
    
     right: 10px;
