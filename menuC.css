@@ -67,6 +67,34 @@ header {
     padding-top: 25px;
     padding-right: 200px;
 }
+.fiche-entree{
+  animation: fadeandscale 2s ease-in-out;
+  animation-delay: -0.2s;
+  transform-origin: bottom;
+}
+.fiche-plat{
+  animation: fadeandscale 2s ease-in-out;
+  animation-delay: -0.2s;
+  transform-origin: bottom;
+
+}
+
+.fiche-dessert{
+  animation: fadeandscale 2s ease-in-out;
+  animation-delay: -0.2s;
+  transform-origin: bottom;
+}
+
+@keyframes fadeandscale{
+  0%{
+    opacity: 0;
+    transform: scale3d(.75,.75,1);
+  }
+  100%{
+    opacity: 1;
+    transform: scale3d(1,1,1);
+  }
+}
 
 .cadre-repas{
     
