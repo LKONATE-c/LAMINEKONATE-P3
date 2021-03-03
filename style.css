@@ -9,51 +9,48 @@
 
 body {
   background: white;
-  font-family:"Robot-black",arial,serif,sans-serif;
+  font-family:"Robot-black",arial,sans-serif;
 }
-  
-.loader{
-  position: relative;
-  font-size: 50px;
-  color: black;
-  text-align: center;
-  
-  
-}
-.loader-page{
+
+
+
+.loader-circle{
+  content: "";
   position: absolute;
-  width: 100%;
-  height: 100vh;
-  background: #9356DC;
-  animation: loader-page-end;
-  animation-duration: 2s;
-  visibility: visible;
+  box-sizing: border-box;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 150PX;
+  margin:-76px 0 0 -76px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #99E2D0;
+  border-bottom-color: #9356DC;
+  z-index: 1;
+  animation: spinner 3S 100ms ease ;
   animation-fill-mode: forwards;
- 
-}
-
-@keyframes loader-page-end{
- 0%{
-  opacity: 1;
+  
 }
 
 
+@keyframes spinner{
+  to{
+    transform: rotate(360deg);
+  }
+  0%{
+    opacity: 1;
+  }
   100%{
     opacity: 0;
   }
- }
-  
-
-a{
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
 }
+
 
 h1 {
   font-size: 1.5rem;
   text-align: center;
-  font-family:"Shrikhand",arial,serif,sans-serif;
+  font-family:"Shrikhand",arial,,sans-serif;
 }
 
 header {
@@ -205,12 +202,19 @@ h2,h3 {
     
   }
  
-  .ville-restau{
-    padding-left: 25px;
+  .ville-restau-menil{
+    position: absolute;
+    left: 10%;
+  }
+  .ville-restau-char-folie{
+    position: absolute;
+    left: 8%;
+
   }
 
   .ville-restau-cite-rouge{
-    padding-left: 30px;
+    position: absolute;
+    left: 12%;
   }
   .new-restau{
     border: 1px solid #99E2D0 ;
@@ -219,10 +223,20 @@ h2,h3 {
     width: 80px;
     position: relative;
     right: -100px;
-    top: -120%;
+    top: -110%;
     color: green;
     text-align: center;
   }
+  .fa-heart{
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    color: black;
+    height: 30px;
+    right: 5%;
+
+  }
+
   
   .endtext{
     border:1px solid #F2F2F2;
@@ -281,7 +295,11 @@ h2,h3 {
    
     position: absolute;
   }
+  .ville-restau-menil{}
     
+  .ville-restau-char-folie{}
+
+  .ville-restau-cite-rouge{}
   
   
   .endtext{
