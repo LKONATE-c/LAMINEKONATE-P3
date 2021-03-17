@@ -14,7 +14,7 @@ body {
 
 .loader{
   position: absolute;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background:white;
   animation: load-page 3s 100ms;
@@ -224,7 +224,7 @@ h2,h3 {
     position: absolute;
     left: 13%;
   }
-  .ville-restau-char-folie{
+  .ville-restau-charonne, .ville-restau-folie-meri{
     position: absolute;
     left: 12%;
 
@@ -234,13 +234,15 @@ h2,h3 {
     position: absolute;
     left: 15%;
   }
+
+ 
   .new-restau{
     border: 1px solid #99E2D0 ;
     border-radius: 5px;
     background-color:#99E2D0 ;
     width: 80px;
     position: relative;
-    right: -100px;
+    right: -140px;
     top: -110%;
     color: green;
     text-align: center;
@@ -252,9 +254,11 @@ h2,h3 {
     color: black;
     height: 30px;
     right: 5%;
-
   }
-
+  
+  .heart-color{
+    color: rgba(147,86,220,1);
+  }
   
   .endtext{
     border:1px solid #F2F2F2;
@@ -313,13 +317,18 @@ h2,h3 {
    
     position: absolute;
   }
-  .ville-restau-menil{}
-    
-  .ville-restau-char-folie{}
+ 
+  .fa{
+    color:#9356DC ;
+  }
+  .fa-heart:hover{
+   
+    font-weight: 900 !important;
+    background-clip: text;
+    -webkit-background-clip:text ;
+    background-color:#9356DC ;
+  }
 
-  .ville-restau-cite-rouge{}
-  
-  
   .endtext{
     flex-direction: column;
    

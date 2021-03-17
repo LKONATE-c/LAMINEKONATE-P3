@@ -7,16 +7,30 @@
     src: url("/font/Robot-black.ttf") format("truetype")
 }
 
+*{outline: 2px red solid;}
+
+
 body {
      
-    font-family:"Robot-black",arial,serif,sans-serif;
+    font-family:"Robot-black",arial,sans-serif;
   }
 
 h1,h2,h3{
     margin-left: 4%;
-    font-family:"Shrikhand",arial,serif,sans-serif;
-    font-size: 1em;
+    font-family:"Shrikhand",arial,sans-serif;
     padding-top: 15px;
+}
+h1{
+  font-size: 1.5em;
+}
+
+h2,h3{
+  font-size: 1em;
+  font-weight: lighter;
+}
+h2:hover{
+  text-decoration: underline #99E2D0 2PX;
+
 }
 header {
   
@@ -64,30 +78,32 @@ header {
 .nom-restau-heart{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    position: relative;
+
    
 }
 .fa-heart{
-    padding-top: 25px;
-    padding-right: 200px;
+    position: absolute;
+    top: 50%;
+    right: 40%;
 }
 
 .fiche-entree{
   animation: fadeandscale 2s ease-in-out;
-  animation-delay: -0.2s;
-  transform-origin: bottom;
+  animation-delay: -1s;
+  transform-origin: top;
 }
 .fiche-plat{
   animation: fadeandscale 2s ease-in-out;
-  animation-delay: -0.2s;
-  transform-origin: bottom;
+  animation-delay: -.8s;
+  transform-origin: top;
 
 }
 
 .fiche-dessert{
   animation: fadeandscale 2s ease-in-out;
-  animation-delay: -0.2s;
-  transform-origin: bottom;
+  animation-delay: -.6s;
+  transform-origin: top;
 }
 
 @keyframes fadeandscale{
@@ -103,27 +119,83 @@ header {
 
 
 
-.cadre-repas{
+.conteneur-cadre-repas{
     
     border-radius: 10px;
     background-color:white;
-    width: 290px;
+    width: 340px;
     height: 50px;
     margin-top: 10px;
     padding-left: 5px;
     margin-right: auto;
     margin-left: auto;
-    padding-top: 10px;
-    padding-right: 5px;
+    display: flex;
+    
+}
+.cadre-repas{
+  display: flex;
+  flex-wrap: wrap;
+ 
 }
 
-.prix{
-    float: right;
+.cadre-plat-princpal{
+  font-weight: bolder;
 }
 
-.plat-princpal{
-    font-weight: bolder;
+.cadre-repas-accompa-prix-vali{
+  display: flex;
+  
 }
+
+
+
+.cadre-accompagnement{
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cadre-prix{
+ width: 50PX;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
+}
+
+
+
+.cadre-validation-entre{
+  width: 0%;
+  transition: width 1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #99E2D0;
+  background-color: #99E2D0;
+  border-radius: 0 10px 10px 0;
+}
+.fa-check-circle{
+  transition: transform 2s;
+  transform: rotate(0);
+  background-color: white;
+}
+.conteneur-cadre-repas:hover .cadre-validation-entre {
+  width: 30%;
+ 
+}
+
+.conteneur-cadre-repas:hover .fa-check-circle{
+  transform: rotate(360deg);
+}
+
+.conteneur-cadre-repas:hover .cadre-repas-accompa-prix-vali {
+  transform: translateX(-10px);
+  
+
+}
+
 .bouton-de-commande{
 
     margin-top: 30px;
@@ -135,7 +207,9 @@ header {
 .btn-cde{
     border-radius: 20px;
     color: white;
+    border-color: transparent;
     text-align: center;
+    box-shadow:2px 1px 1px grey ;
     padding: 0.5rem;
     margin-right: auto;
     margin-left: auto;
@@ -173,7 +247,7 @@ header {
 
     .fa-heart{
         
-        padding-right: 50px;
+       right: 15%;
     }
 
     .bouton-de-commande{

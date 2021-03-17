@@ -69,20 +69,20 @@ header {
 }
 .fiche-entree{
   animation: fadeandscale 2s ease-in-out;
-  animation-delay: -0.2s;
-  transform-origin: bottom;
+  animation-delay: -1s;
+  transform-origin: top;
 }
 .fiche-plat{
   animation: fadeandscale 2s ease-in-out;
-  animation-delay: -0.2s;
-  transform-origin: bottom;
+  animation-delay: -.8s;
+  transform-origin: top;
 
 }
 
 .fiche-dessert{
   animation: fadeandscale 2s ease-in-out;
-  animation-delay: -0.2s;
-  transform-origin: bottom;
+  animation-delay: -.6s;
+  transform-origin: top;
 }
 
 @keyframes fadeandscale{
@@ -100,7 +100,7 @@ header {
     
     border-radius: 10px;
     background-color:white;
-    width: 290px;
+    width: 340px;
     height: 50px;
     margin-top: 10px;
     padding-left: 5px;
