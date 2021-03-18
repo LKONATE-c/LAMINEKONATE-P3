@@ -127,40 +127,50 @@ header {
     height: 50px;
     margin-top: 10px;
     padding-left: 5px;
+    padding-top: 5px;
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    
+    overflow: hidden;
+    cursor: pointer;
 }
 .cadre-repas{
   display: flex;
-  flex-wrap: wrap;
+  width: 100%;
+  flex-direction: column;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
  
 }
 
 .cadre-plat-princpal{
-  font-weight: bolder;
+  font-weight: bold;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
 }
 
-.cadre-repas-accompa-prix-vali{
-  display: flex;
-  
-}
 
 
 
 .cadre-accompagnement{
-  width: 250px;
+  display: inline-block;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 5px;
+  
 }
 
 .cadre-prix{
- width: 50PX;
- white-space: nowrap;
- overflow: hidden;
- text-overflow: ellipsis;
+
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 5px;
+  padding-right: 5px;
 }
 
 
@@ -179,7 +189,7 @@ header {
 .fa-check-circle{
   transition: transform 2s;
   transform: rotate(0);
-  background-color: white;
+  color: white;
 }
 .conteneur-cadre-repas:hover .cadre-validation-entre {
   width: 30%;
@@ -190,11 +200,6 @@ header {
   transform: rotate(360deg);
 }
 
-.conteneur-cadre-repas:hover .cadre-repas-accompa-prix-vali {
-  transform: translateX(-10px);
-  
-
-}
 
 .bouton-de-commande{
 
@@ -202,7 +207,7 @@ header {
     margin-right: 40%;
     margin-left: 40%;
     padding-bottom: 30px;
-    
+    cursor: pointer;
 }
 .btn-cde{
     border-radius: 20px;
@@ -214,12 +219,13 @@ header {
     margin-right: auto;
     margin-left: auto;
     display: block;
-    background: linear-gradient(162deg, rgba(255,121,196,0.9836309523809523) 1%, rgba(147,86,220,1) 35%);
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
     transition: background 400ms linear;
   }
   
   .btn-cde:hover{
-    background: #AD310B;
+    background:linear-gradient(to bottom rIght,#ffa4df,#9549f1 );
+    box-shadow:4px 2px 2px grey ;
     
   }
 

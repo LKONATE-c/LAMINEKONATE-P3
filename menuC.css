@@ -95,46 +95,112 @@ header {
     transform: scale3d(1,1,1);
   }
 }
-
-.cadre-repas{
+.conteneur-cadre-repas{
     
-    border-radius: 10px;
-    background-color:white;
-    width: 340px;
-    height: 50px;
-    margin-top: 10px;
-    padding-left: 5px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 10px;
-    padding-right: 5px;
+  border-radius: 10px;
+  background-color:white;
+  width: 340px;
+  height: 50px;
+  margin-top: 10px;
+  padding-left: 5px;
+  padding-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  overflow: hidden;
+  cursor: pointer;
+}
+.cadre-repas{
+display: flex;
+width: 100%;
+flex-direction: column;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
 }
 
-.prix{
-    float: right;
+.cadre-plat-princpal{
+font-weight: bold;
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+
 }
 
-.plat-princpal{
-    font-weight: bolder;
+
+.cadre-accompagnement{
+display: inline-block;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+padding-top: 5px;
+
 }
+
+.cadre-prix{
+
+display: flex;
+align-items: flex-end;
+padding-bottom: 5px;
+padding-right: 5px;
+}
+
+.cadre-validation-entre{
+width: 0%;
+transition: width 1s;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+color: #99E2D0;
+background-color: #99E2D0;
+border-radius: 0 10px 10px 0;
+}
+.fa-check-circle{
+transition: transform 2s;
+transform: rotate(0);
+background-color: white;
+}
+.conteneur-cadre-repas:hover .cadre-validation-entre {
+width: 30%;
+
+}
+
+.conteneur-cadre-repas:hover .fa-check-circle{
+transform: rotate(360deg);
+}
+
 .bouton-de-commande{
 
-    margin-top: 30px;
-    margin-right: 40%;
-    margin-left: 40%;
-    padding-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 40%;
+  margin-left: 40%;
+  padding-bottom: 30px;
+  cursor: pointer;
 }
 .btn-cde{
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-    padding: 0.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    background: rgb(255,121,196);
-    background: linear-gradient(162deg, rgba(255,121,196,0.9836309523809523) 1%, rgba(147,86,220,1) 35%);
+  border-radius: 20px;
+  color: white;
+  border-color: transparent;
+  text-align: center;
+  box-shadow:2px 1px 1px grey ;
+  padding: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  transition: background 400ms linear;
 }
+
+.btn-cde:hover{
+  background:linear-gradient(to bottom rIght,#ffa4df,#9549f1 );
+  box-shadow:4px 2px 2px grey ;
+  
+}
+
+
 .endtext{
     border:1px solid #F2F2F2;
     background-color: black;
