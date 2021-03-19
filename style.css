@@ -138,6 +138,9 @@ h2,h3 {
   padding-top: 20px;
   font-family:"Shrikhand",arial,serif,sans-serif;
 }
+a{
+  text-decoration: none;
+}
 
 
 .btn-fct
@@ -217,12 +220,17 @@ h2,h3 {
   .nom-restau{
     display: flex;
     justify-content: space-around;
-    
+    padding-right: 55px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
   }
  
   .ville-restau-menil{
     position: absolute;
-    left: 13%;
+    left: 12%;
+    color: black;
+
   }
   .ville-restau-charonne, .ville-restau-folie-meri{
     position: absolute;
@@ -232,7 +240,7 @@ h2,h3 {
 
   .ville-restau-cite-rouge{
     position: absolute;
-    left: 15%;
+    left: 18%;
   }
 
  
@@ -255,10 +263,21 @@ h2,h3 {
     height: 30px;
     right: 5%;
   }
-  
-  .heart-color{
-    color: rgba(147,86,220,1);
+
+  .fas{
+    position: absolute;
+    bottom: 10px;
+    font-size: 25px;
+    height: 30px;
+    right: 5%;
+    opacity: 0;
+    
   }
+  .heart-color::before> .fa-heart{
+    content: "";
+
+  }
+  
   
   .endtext{
     border:1px solid #F2F2F2;
