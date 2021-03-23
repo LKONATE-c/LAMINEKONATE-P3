@@ -1,15 +1,15 @@
-@font-face{
-  font-family:Shrikhand;
-  src: url("/font/Shrikhand-Regular.otf") format("OpenType")
-}
-@font-face{
-  font-family:"Robot-black";
-  src: url("/font/Robot-black.ttf") format("truetype")
-}
+
 
 body {
   background: white;
-  font-family:"Robot-black",arial,sans-serif;
+  font-family:'Roboto', sans-serif;
+}
+
+h2,h3{
+  font-family:'Shrikhand', cursive;
+  margin-left: 30px;
+  font-size: 1rem;
+  padding-top: 20px;
 }
 
 .loader{
@@ -68,7 +68,7 @@ body {
 h1 {
   font-size: 1.5rem;
   text-align: center;
-  font-family:"Shrikhand",arial,,sans-serif;
+  font-family:'Shrikhand', cursive,arial,sans-serif;
 }
 
 header {
@@ -116,12 +116,26 @@ header {
   text-align: center;
 }
 
-.presentation-btn-explorer {
-  border-radius: 20px;
-  background: linear-gradient(162deg, rgba(147,86,220,1) 5%, rgba(255,121,218,1) 63%);
-  color: white;
-  text-align: center;
-  padding: 0.5rem;
+.presentation-bouton-de-recherche{
+  cursor: pointer;
+}
+
+.presentation-btn-explorer{
+    border-radius: 20px;
+    color: white;
+    border-color: transparent;
+    text-align: center;
+    box-shadow:2px 1px 1px grey ;
+    padding: 0.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    background: linear-gradient(to bottom right, #ff79da, #9356dc);
+    transition: background 400ms linear;
+}
+ .presentation-btn-explorer:hover {
+  background:linear-gradient(to bottom rIght,#ffa4df,#9549f1 );
+  box-shadow:4px 2px 2px grey ;
 }
 
 .operation{
@@ -131,13 +145,6 @@ header {
   align-items: center;
 }
 
-h2,h3 {
-
-  margin-left: 30px;
-  font-size: 1rem;
-  padding-top: 20px;
-  font-family:"Shrikhand",arial,serif,sans-serif;
-}
 a{
   text-decoration: none;
 }
@@ -152,8 +159,8 @@ a{
     width: 250px;
     height: 30px;
     margin-top: 10px;
-    padding-left: 0px;
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 10px;
 }
   .btn-fct-logo-texte
@@ -255,28 +262,18 @@ a{
     color: green;
     text-align: center;
   }
-  .fa-heart{
+  .far{
     position: absolute;
     bottom: 10px;
     font-size: 25px;
-    color: black;
+    color: grey;
     height: 30px;
     right: 5%;
+    transition: all 0.8s ease;
   }
 
-  .fas{
-    position: absolute;
-    bottom: 10px;
-    font-size: 25px;
-    height: 30px;
-    right: 5%;
-    opacity: 0;
-    
-  }
-  .heart-color::before> .fa-heart{
-    content: "";
-
-  }
+  
+  
   
   
   .endtext{
@@ -337,16 +334,17 @@ a{
     position: absolute;
   }
  
-  .fa{
-    color:#9356DC ;
-  }
+  
   .fa-heart:hover{
-   
     font-weight: 900 !important;
     background-clip: text;
     -webkit-background-clip:text ;
-    background-color:#9356DC ;
+    background-image: linear-gradient(to top,#FF79DA,#9356DC );
+    overflow: hidden;
+    color: transparent;
   }
+   
+   
 
   .endtext{
     flex-direction: column;
