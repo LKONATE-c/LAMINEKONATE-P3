@@ -1,32 +1,27 @@
-@font-face{
-    font-family:"Shrikhand";
-    src: url("/font/Shrikhand-Regular.otf") format("OpenType")
-  }
-  @font-face{
-    font-family:"Robot-black";
-    src: url("/font/Robot-black.ttf") format("truetype")
-}
+
 
 */*{outline: 2px red solid;}*/
 
 
 body {
      
-    font-family:"Robot-black",arial,sans-serif;
+   font-family:'Roboto', sans-serif;
+   background-color:#EEEAE9; 
   }
 
 h1,h2,h3{
     margin-left: 10%;
-    font-family:"Shrikhand",arial,sans-serif;
     padding-top: 15px;
 }
 h1{
   font-size: 1.5em;
+  font-family:'Shrikhand', cursive;
 }
 
 h2,h3{
   font-size: 1em;
   font-weight: lighter;
+  font-family:'Roboto', sans-serif;
 }
 h2:hover{
   text-decoration: underline #99E2D0 2PX;
