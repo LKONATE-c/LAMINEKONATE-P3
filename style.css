@@ -6,9 +6,8 @@ body {
 }
 
 h2,h3{
-  font-family:'Shrikhand', cursive;
-  margin-left: 30px;
-  font-size: 1rem;
+  font-family:'Roboto', sans-serif;
+  margin-left: 50px;
   padding-top: 20px;
 }
 
@@ -219,7 +218,7 @@ a{
   }
   .restau-photo{
     height: 150px;
-    width: 250px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     object-fit: cover;
@@ -270,6 +269,14 @@ a{
     height: 30px;
     right: 5%;
     transition: all 0.8s ease;
+  }
+  .fa-heart:hover{
+    font-weight: 900 !important;
+    background-clip: text;
+    -webkit-background-clip:text ;
+    background-image: linear-gradient(to top,#FF79DA,#9356DC );
+    overflow: hidden;
+    color: transparent;
   }
 
   
@@ -334,7 +341,7 @@ a{
     position: absolute;
   }
  
-  
+  /*
   .fa-heart:hover{
     font-weight: 900 !important;
     background-clip: text;
@@ -342,7 +349,7 @@ a{
     background-image: linear-gradient(to top,#FF79DA,#9356DC );
     overflow: hidden;
     color: transparent;
-  }
+  }*/
    
    
 

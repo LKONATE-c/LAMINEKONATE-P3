@@ -16,7 +16,7 @@ body {
   }
 
 h1,h2,h3{
-    margin-left: 4%;
+    margin-left: 10%;
     font-family:"Shrikhand",arial,sans-serif;
     padding-top: 15px;
 }
@@ -60,6 +60,8 @@ header {
 .photo-plat-restau{
     height: 300px;
     display: block;
+    width: 100%;
+    object-fit: cover;
     margin-left: auto;
     margin-right: auto;
 }
@@ -78,15 +80,32 @@ header {
 .nom-restau-heart{
     display: flex;
     justify-content: space-between;
-    position: relative;
+   
 
    
 }
-.fa-heart{
+.fa-heart {
     position: absolute;
-    top: 50%;
-    right: 40%;
+    top: 4%;
+    right: 12%;
+    font-size: 25px;
+    color: grey;
+    height: 30px;
+    right: 10%;
+    transition: all 0.8s ease;
+    
 }
+
+.fa-heart:hover{
+  font-weight: 900 !important;
+  background-clip: text;
+  -webkit-background-clip:text ;
+  background-image: linear-gradient(to top,#FF79DA,#9356DC );
+  overflow: hidden;
+  color: transparent;
+}
+
+
 
 .fiche-entree{
   animation: fadeandscale 2s ease-in-out;
@@ -123,13 +142,12 @@ header {
     
     border-radius: 10px;
     background-color:white;
-    width: 340px;
+    width: auto;
     height: 50px;
     margin-top: 10px;
     padding-left: 5px;
-    padding-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 10%;
+    margin-left: 10%;
     display: flex;
     overflow: hidden;
     cursor: pointer;
@@ -253,7 +271,7 @@ header {
 
     .fa-heart{
         
-       right: 15%;
+       right: 13%;
     }
 
     .bouton-de-commande{
