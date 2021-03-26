@@ -21,12 +21,26 @@ h2,h3{
   z-index: 10;
 }
 
+
+-webkit-@keyframes load-page{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
 @keyframes load-page{
   0%{
     opacity: 1;
   }
   100%{
     opacity: 0;
+    z-index: -1;
+    
+
   }
 }
 
@@ -48,6 +62,18 @@ h2,h3{
   animation: spinner 3S 100ms linear;
   animation-fill-mode: forwards;
   
+}
+
+-webkit-@keyframes spinner{
+  to{
+    transform: rotate(360deg);
+  }
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
 }
 
 
@@ -117,22 +143,24 @@ header {
 
 .presentation-bouton-de-recherche{
   cursor: pointer;
+  
 }
 
 .presentation-btn-explorer{
-    border-radius: 20px;
-    color: white;
-    border-color: transparent;
-    text-align: center;
-    box-shadow:2px 1px 1px grey ;
-    padding: 0.5rem;
-    margin-right: auto;
-    margin-left: auto;
-    display: block;
-    background: linear-gradient(to bottom right, #ff79da, #9356dc);
-    transition: background 400ms linear;
+   border-radius: 20px;
+   color: white;
+   border-color: transparent;
+   text-align: center;
+   box-shadow:2px 1px 1px grey ;
+   padding: 0.5rem;
+   margin-right: auto;
+   margin-left: auto;
+   display: block;
+   background: linear-gradient(to bottom right, #ff79da, #9356dc);
+   transition: background 400ms linear;
+  
 }
- .presentation-btn-explorer:hover {
+  .presentation-btn-explorer:hover {
   background:linear-gradient(to bottom rIght,#ffa4df,#9549f1 );
   box-shadow:4px 2px 2px grey ;
 }
@@ -241,12 +269,14 @@ a{
   .ville-restau-charonne, .ville-restau-folie-meri{
     position: absolute;
     left: 12%;
+    color: black;
 
   }
 
   .ville-restau-cite-rouge{
     position: absolute;
     left: 18%;
+    color: black;
   }
 
  
