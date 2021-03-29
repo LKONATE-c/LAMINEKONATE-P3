@@ -22,15 +22,7 @@ h2,h3{
 }
 
 
--webkit-@keyframes load-page{
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-    z-index: -1;
-  }
-}
+
 
 @keyframes load-page{
   0%{
@@ -64,17 +56,7 @@ h2,h3{
   
 }
 
--webkit-@keyframes spinner{
-  to{
-    transform: rotate(360deg);
-  }
-  0%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
+
 
 
 @keyframes spinner{
@@ -123,7 +105,7 @@ header {
 .presentation {
   background-color: #EEEAE9;
   border: 1px solid #EEEAE9;
-  height: 250px;
+  height: 300px;
 }
 
 .presentation-icone-saisie {
@@ -139,6 +121,12 @@ header {
 
 .presentation-recherche{
   text-align: center;
+  
+}
+.presentation-recherche-police{
+  font-size: 30px;
+  font-weight: bold;
+
 }
 
 .presentation-bouton-de-recherche{
@@ -322,7 +310,7 @@ a{
     color: white;
   }
   .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
-    padding-top: 35px;
+    padding-top: 40px;
   }
   .endtext-contact{
     padding-right: 20px;
@@ -389,7 +377,7 @@ a{
   }
   .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 50px;
   }
 }
 

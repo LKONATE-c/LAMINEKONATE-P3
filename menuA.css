@@ -8,10 +8,12 @@ body {
    font-family:'Roboto', sans-serif;
    background-color:#EEEAE9; 
   }
-
+.container-principal{
+  max-width: 1900px;
+}
 h1,h2,h3{
     margin-left: 10%;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 h1{
   font-size: 1.5em;
@@ -23,10 +25,17 @@ h2,h3{
   font-weight: lighter;
   font-family:'Roboto', sans-serif;
 }
-h2:hover{
-  text-decoration: underline #99E2D0 2PX;
-
+h2::after {
+  content: "";
+  display: block;
+  width: 5%;
+  height: 3px;
+  background: #99E2D0;
 }
+a{
+  text-decoration: none;
+}
+
 header {
   
   background-color: white;
@@ -81,7 +90,7 @@ header {
 }
 .fa-heart {
     position: absolute;
-    top: 4%;
+    top: 3%;
     right: 12%;
     font-size: 25px;
     color: grey;
@@ -138,7 +147,7 @@ header {
     border-radius: 10px;
     background-color:white;
     width: auto;
-    height: 50px;
+    height: 60px;
     margin-top: 10px;
     padding-left: 5px;
     margin-right: 10%;
@@ -154,6 +163,8 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-top: 10px;
+ padding-bottom: 10px;
  
 }
 
@@ -163,6 +174,7 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  
 
 }
 
@@ -174,7 +186,7 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-top: 5px;
+  
   
 }
 
@@ -182,8 +194,9 @@ header {
 
   display: flex;
   align-items: flex-end;
-  padding-bottom: 5px;
+  padding-bottom: 12px;
   padding-right: 5px;
+  font-weight: 900;
 }
 
 
@@ -251,7 +264,7 @@ header {
     color: white;
   }
   .propo-restau,.partenaire,.memtion,.contact{
-    padding-top: 30px;
+    padding-top: 40px;
   }
   .contact{
     padding-right: 20px;
@@ -262,6 +275,10 @@ header {
 @media only screen and (max-width: 630px){
   body{
     background-color: #EEEAE9;
+  }
+
+  h2::after{
+    width: 10%;
   }
 
     .fa-heart{
@@ -280,6 +297,6 @@ header {
       }
       .propo-restau,.partenaire,.memtion,.contact{
         padding-top: 10px;
-        padding-left: 20px;
+        padding-left: 50px;
       }
 }
