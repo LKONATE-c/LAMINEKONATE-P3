@@ -18,9 +18,12 @@ h2,h3{
  font-weight: lighter;
  font-family:'Roboto', sans-serif;
 }
-h2:hover{
- text-decoration: underline #99E2D0 2PX;
-
+h2::after {
+  content: "";
+  display: block;
+  width: 5%;
+  height: 3px;
+  background: #99E2D0;
 }
 header {
  
@@ -264,6 +267,10 @@ a{
  body{
    background-color: #EEEAE9;
  }
+
+ h2::after{
+  width: 10%;
+}
 
    .fa-heart{
        
