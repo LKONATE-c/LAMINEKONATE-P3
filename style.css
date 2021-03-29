@@ -3,11 +3,18 @@
 body {
   background: white;
   font-family:'Roboto', sans-serif;
+  
 }
 
-h2,h3{
+h2{
   font-family:'Roboto', sans-serif;
-  margin-left: 50px;
+ 
+  padding-top: 20px;
+}
+
+h3{
+  font-family:'Roboto', sans-serif;
+  margin-left: 10%;
   padding-top: 20px;
 }
 
@@ -171,12 +178,13 @@ a{
     justify-content: space-between;
     border-radius: 10px;
     background-color:#DBD6D5;
-    width: 250px;
+    width: 300px;
     height: 30px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
+    font-weight: bold;
 }
   .btn-fct-logo-texte
   {
@@ -220,7 +228,7 @@ a{
      
     background-color: white;
     height: 150px;
-    width: 250px;
+    width: 350px;
     border-radius:  20px 20px ;
     padding-bottom: 3em;
     border: 1px solid #ddd;
@@ -248,22 +256,17 @@ a{
     color: black;
   }
  
-  .ville-restau-menil{
+  .ville-restau-menil,.ville-restau-charonne, .ville-restau-folie-meri{
     position: absolute;
-    left: 12%;
+    left: 24%;
     color: black;
 
   }
-  .ville-restau-charonne, .ville-restau-folie-meri{
-    position: absolute;
-    left: 12%;
-    color: black;
-
-  }
+  
 
   .ville-restau-cite-rouge{
     position: absolute;
-    left: 18%;
+    left: 28%;
     color: black;
   }
 
@@ -274,7 +277,7 @@ a{
     background-color:#99E2D0 ;
     width: 80px;
     position: relative;
-    right: -140px;
+    right: -260px;
     top: -110%;
     color: green;
     text-align: center;
@@ -327,6 +330,9 @@ a{
   */
 
 @media only screen and (max-width: 610px) {
+  
+  
+  
   .btn-retour {
     padding-left: 20px;
     padding-right: 30px;
@@ -335,7 +341,9 @@ a{
   .nav {
     height: 200px;
   }
-
+  h2{
+    padding-left: 10%;
+  }
   h1 {
     font-size: 20px;
     padding-left: 50px;
@@ -377,8 +385,22 @@ a{
   }
   .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
     padding-top: 10px;
-    padding-left: 50px;
+    margin-left: 10%;
   }
+  .ville-restau-menil, .ville-restau-charonne, .ville-restau-folie-meri {
+    position: absolute;
+    left: 18%;
+    color: black;
+
+  }
+
+
+  .ville-restau-cite-rouge{
+    position: absolute;
+    left: 24%;
+    color: black;
+  }
+
 }
 
 /*# sourceMappingURL=style.css.map */

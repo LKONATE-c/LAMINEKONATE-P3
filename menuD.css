@@ -21,7 +21,7 @@ h2,h3{
 h2::after {
   content: "";
   display: block;
-  width: 5%;
+  width: 4%;
   height: 3px;
   background: #99E2D0;
 }
@@ -288,6 +288,6 @@ a{
      }
      .propo-restau,.partenaire,.memtion,.contact{
        padding-top: 10px;
-       padding-left: 50px;
+       margin-left: 10%;
      }
 }

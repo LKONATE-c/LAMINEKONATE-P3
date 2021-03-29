@@ -11,6 +11,8 @@ body {
 .container-principal{
   max-width: 1900px;
 }
+
+
 h1,h2,h3{
     margin-left: 10%;
     padding-top: 10px;
@@ -28,7 +30,7 @@ h2,h3{
 h2::after {
   content: "";
   display: block;
-  width: 5%;
+  width: 4%;
   height: 3px;
   background: #99E2D0;
 }
@@ -269,6 +271,7 @@ header {
   .contact{
     padding-right: 20px;
     color: white;
+    
   }
 
 
@@ -291,12 +294,13 @@ header {
         margin-left: 35%;
         padding-bottom: 20px;
     }
+    
     .endtext{
         flex-direction: column;
        
       }
       .propo-restau,.partenaire,.memtion,.contact{
         padding-top: 10px;
-        padding-left: 50px;
+        margin-left: 10%;
       }
 }
