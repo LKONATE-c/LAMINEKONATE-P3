@@ -4,6 +4,10 @@ body {
   background-color:#EEEAE9; 
  }
 
+ .container-principal{
+  max-width: 1900px;
+}
+
 h1,h2,h3{
    margin-left: 10%;
    padding-top: 10px;
