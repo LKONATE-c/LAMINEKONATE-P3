@@ -5,13 +5,14 @@ body {
   font-family:'Roboto', sans-serif;
   
 }
+
 .container-principal{
   max-width: 1900px;
 }
 
 h2{
   font-family:'Roboto', sans-serif;
- 
+  font-weight: 900;
   padding-top: 20px;
 }
 
@@ -30,7 +31,6 @@ h3{
   animation-fill-mode: forwards;
   z-index: 10;
 }
-
 
 
 
@@ -101,7 +101,7 @@ header {
   display: none;
 }
 .header-img-logo{
-  padding-right: 40px;
+  padding-right: 20px;
 }
 
 .logo-food{
@@ -122,6 +122,8 @@ header {
   text-align: center;
   background-color: #DBD6D5;
   border: solid 1px #DBD6D5;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 #townsearch {
@@ -180,14 +182,16 @@ a{
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
-    background-color:#DBD6D5;
+    background-color:#f7F5F6;
     width: 300px;
-    height: 30px;
+    height: 40px;
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 10px;
     font-weight: bold;
+    box-shadow: 1px   1px 1px grey;
+    cursor: pointer;
 }
   .btn-fct-logo-texte
   {
@@ -218,7 +222,7 @@ a{
     color: #9356DC ;
   }
   .restaurant{
-    background-color:#DBD6D5;
+    background-color:#f7F5F6;
     height: auto;
   }
 
@@ -322,15 +326,7 @@ a{
     padding-right: 20px;
     color: white;
   }
-  /*--
-  @media only screen and (min-width:622px) and (max-width:1220px){
-    .carte-restau{
-      margin-left:10%;
-      margin-right: 10%;
-    }
-
-  }
-  */
+  
 
 @media only screen and (max-width: 610px) {
   
