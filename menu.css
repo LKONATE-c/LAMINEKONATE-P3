@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: #f7F5F6;
+    background-color: #f6f6f6;
   }
   .container-principal {
     max-width: 1900px;
@@ -68,7 +68,7 @@ body {
   
   .menu {
     justify-content: space-between;
-    background-color: #f7F5F6;
+    background-color: #f6f6f6;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
     height: auto;
@@ -201,12 +201,13 @@ body {
   
   .bouton-de-commande {
     margin-top: 30px;
-    margin-right: 40%;
-    margin-left: 40%;
+    margin-right: auto;
+    margin-left: auto;
     padding-bottom: 30px;
     cursor: pointer;
   }
   .btn-cde {
+    width: 200px;
     border-radius: 20px;
     color: white;
     border-color: transparent;
@@ -252,9 +253,7 @@ body {
   }
   
   @media only screen and (max-width: 630px) {
-    body {
-      background-color: #f2f2f2;
-    }
+   
   
     h2::after {
       width: 8%;
@@ -265,8 +264,7 @@ body {
     }
   
     .bouton-de-commande {
-      margin-right: 35%;
-      margin-left: 35%;
+     
       padding-bottom: 20px;
     }
   

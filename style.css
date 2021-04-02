@@ -1,6 +1,7 @@
 body {
   background: white;
   font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
 .container-principal {
@@ -97,13 +98,15 @@ header {
 }
 
 .presentation {
-  background-color: #eeeae9;
+  background-color: #f6f6f6;
   border: 1px solid #eeeae9;
   height: 300px;
 }
 
 .presentation-icone-saisie {
+  display: flex;
   text-align: center;
+  justify-content: center;
   background-color: #dbd6d5;
   border: solid 1px #dbd6d5;
   padding-top: 10px;
@@ -117,10 +120,15 @@ header {
 
 .presentation-recherche {
   text-align: center;
+ 
 }
-.presentation-recherche-police {
+.presentation-recherche-reserve {
   font-size: 30px;
   font-weight: bold;
+  padding-left: 20px;
+}
+.presentation-decouvre{
+  font-family: inherit;
 }
 
 .presentation-bouton-de-recherche {
@@ -128,6 +136,7 @@ header {
 }
 
 .presentation-btn-explorer {
+  width: 200px;
   border-radius: 20px;
   color: white;
   border-color: transparent;
@@ -162,7 +171,7 @@ a {
   border-radius: 10px;
   background-color: #f7f5f6;
   width: 300px;
-  height: 40px;
+  height: 60px;
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -170,6 +179,7 @@ a {
   font-weight: bold;
   box-shadow: 1px 1px 1px grey;
   cursor: pointer;
+  align-items: center;
 }
 .operation-btn-fct-logo-texte {
   display: flex;
