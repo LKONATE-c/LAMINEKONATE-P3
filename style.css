@@ -156,7 +156,7 @@ a {
   text-decoration: none;
 }
 
-.btn-fct {
+.operation-btn-fct {
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
@@ -171,12 +171,12 @@ a {
   box-shadow: 1px 1px 1px grey;
   cursor: pointer;
 }
-.btn-fct-logo-texte {
+.operation-btn-fct-logo-texte {
   display: flex;
   width: 90%;
   justify-content: space-around;
 }
-.btn-fct-numer {
+.operation-btn-fct-numer {
   border: 1px solid;
   border-radius: 50%;
   height: 20px;
@@ -194,6 +194,12 @@ a {
 }
 .fa-store {
   color: #9356dc;
+}
+.operation-composez {
+  padding-right: 15px;
+}
+.operation-degustez {
+  padding-right: 10px;
 }
 .restaurant {
   background-color: #f7f5f6;
@@ -283,7 +289,7 @@ a {
 
 .footer-logo {
   width: 150px;
-  filter: invert(100%); 
+  filter: invert(100%);
   -webkit-filter: invert(100%);
 }
 .footer-logo,
@@ -327,6 +333,9 @@ a {
     position: absolute;
   }
 
+  .footer-logo {
+    margin-left: 5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
