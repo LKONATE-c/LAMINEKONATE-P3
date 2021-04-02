@@ -1,91 +1,78 @@
-
-
 body {
   background: white;
-  font-family:'Roboto', sans-serif;
-  
+  font-family: "Roboto", sans-serif;
 }
 
-.container-principal{
+.container-principal {
   max-width: 1900px;
 }
 
-h2{
-  font-family:'Roboto', sans-serif;
+h2 {
+  font-family: "Roboto", sans-serif;
   font-weight: 900;
   padding-top: 20px;
 }
 
-h3{
-  font-family:'Roboto', sans-serif;
-  margin-left: 10%;
+h3 {
+  font-family: "Roboto", sans-serif;
+  margin-left: 5%;
   padding-top: 20px;
 }
 
-.loader{
+.loader {
   position: absolute;
   height: 100vh;
   width: 100%;
-  background:white;
+  background: white;
   animation: load-page 3s 100ms;
   animation-fill-mode: forwards;
   z-index: 10;
 }
 
-
-
-@keyframes load-page{
-  0%{
+@keyframes load-page {
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
     z-index: -1;
-    
-
   }
 }
 
-
-.loader-circle{
+.loader-circle {
   content: "";
   position: absolute;
   box-sizing: border-box;
   top: 50%;
   left: 50%;
   height: 150px;
-  width: 150PX;
-  margin:-76px 0 0 -76px;
+  width: 150px;
+  margin: -76px 0 0 -76px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #99E2D0;
-  border-bottom-color: #9356DC;
+  border-top-color: #99e2d0;
+  border-bottom-color: #9356dc;
   z-index: 1;
-  animation: spinner 3S 100ms linear;
+  animation: spinner 3s 100ms linear;
   animation-fill-mode: forwards;
-  
 }
 
-
-
-
-@keyframes spinner{
-  to{
+@keyframes spinner {
+  to {
     transform: rotate(360deg);
   }
-  0%{
+  0% {
     opacity: 1;
   }
-  100%{
+  100% {
     opacity: 0;
   }
 }
 
-
 h1 {
   font-size: 1.5rem;
   text-align: center;
-  font-family:'Shrikhand', cursive,arial,sans-serif;
+  font-family: "Shrikhand", cursive, arial, sans-serif;
 }
 
 header {
@@ -100,28 +87,25 @@ header {
 .header-btn-retour {
   display: none;
 }
-.header-img-logo{
+.header-img-logo {
   padding-right: 20px;
 }
 
-.logo-food{
+.logo-food {
   height: 30px;
   width: 150px;
 }
 
- 
-
-
 .presentation {
-  background-color: #EEEAE9;
-  border: 1px solid #EEEAE9;
+  background-color: #eeeae9;
+  border: 1px solid #eeeae9;
   height: 300px;
 }
 
 .presentation-icone-saisie {
   text-align: center;
-  background-color: #DBD6D5;
-  border: solid 1px #DBD6D5;
+  background-color: #dbd6d5;
+  border: solid 1px #dbd6d5;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -131,207 +115,190 @@ header {
   background-color: transparent;
 }
 
-.presentation-recherche{
+.presentation-recherche {
   text-align: center;
-  
 }
-.presentation-recherche-police{
+.presentation-recherche-police {
   font-size: 30px;
   font-weight: bold;
-
 }
 
-.presentation-bouton-de-recherche{
+.presentation-bouton-de-recherche {
   cursor: pointer;
-  
 }
 
-.presentation-btn-explorer{
-   border-radius: 20px;
-   color: white;
-   border-color: transparent;
-   text-align: center;
-   box-shadow:2px 1px 1px grey ;
-   padding: 0.5rem;
-   margin-right: auto;
-   margin-left: auto;
-   display: block;
-   background: linear-gradient(to bottom right, #ff79da, #9356dc);
-   transition: background 400ms linear;
-  
+.presentation-btn-explorer {
+  border-radius: 20px;
+  color: white;
+  border-color: transparent;
+  text-align: center;
+  box-shadow: 2px 1px 1px grey;
+  padding: 0.5rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  background: linear-gradient(to bottom right, #ff79da, #9356dc);
+  transition: background 400ms linear;
 }
-  .presentation-btn-explorer:hover {
-  background:linear-gradient(to bottom rIght,#ffa4df,#9549f1 );
-  box-shadow:4px 2px 2px grey ;
+.presentation-btn-explorer:hover {
+  background: linear-gradient(to bottom rIght, #ffa4df, #9549f1);
+  box-shadow: 4px 2px 2px grey;
 }
 
-.operation{
-   display: flex;
+.operation {
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-
-.btn-fct
-{
-    display: flex;
-    justify-content: space-between;
-    border-radius: 10px;
-    background-color:#f7F5F6;
-    width: 300px;
-    height: 40px;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10px;
-    font-weight: bold;
-    box-shadow: 1px   1px 1px grey;
-    cursor: pointer;
+.btn-fct {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #f7f5f6;
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px grey;
+  cursor: pointer;
 }
-  .btn-fct-logo-texte
-  {
-    display: flex;
-    width: 90%;
-    justify-content: space-around;
-
-  }
-  .btn-fct-numer
-  {
-    border: 1px solid;
-    border-radius: 50%;
-    height: 20px;
-    width: 20px;
-    text-align: center;
-    position: relative;
-    right: 10px;
-    background-color:#9356DC  ;
-    color: white;
+.btn-fct-logo-texte {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+.btn-fct-numer {
+  border: 1px solid;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  position: relative;
+  right: 10px;
+  background-color: #9356dc;
+  color: white;
 }
 
-  .fa-mobile-alt,.fa-list-ul
-  {
-    color:gray;
-  }
-  .fa-store
-  {
-    color: #9356DC ;
-  }
-  .restaurant{
-    background-color:#f7F5F6;
-    height: auto;
-  }
+.fa-mobile-alt,
+.fa-list-ul {
+  color: gray;
+}
+.fa-store {
+  color: #9356dc;
+}
+.restaurant {
+  background-color: #f7f5f6;
+  height: auto;
+}
 
-  .choix-restau{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .carte-restau{
-     
-    background-color: white;
-    height: 150px;
-    width: 350px;
-    border-radius:  20px 20px ;
-    padding-bottom: 3em;
-    border: 1px solid #ddd;
-    box-shadow: 0 6px 6px #ddd ;
-    object-fit: cover;
-    margin-top: 4%;
-    margin-bottom: 4%;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: relative;
-  }
-  .restau-photo{
-    height: 150px;
-    width: 100%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    object-fit: cover;
-  }
-  .nom-restau{
-    display: flex;
-    justify-content: space-around;
-    padding-right: 55px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-  }
- 
-  .ville-restau-menil,.ville-restau-charonne, .ville-restau-folie-meri{
-    position: absolute;
-    left: 24%;
-    color: black;
+.choix-restau {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.carte-restau {
+  background-color: white;
+  height: 150px;
+  width: 350px;
+  border-radius: 20px 20px;
+  padding-bottom: 3em;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 6px #ddd;
+  object-fit: cover;
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left: 5%;
+  margin-right: 5%;
+  position: relative;
+}
+.restau-photo {
+  height: 150px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.nom-restau {
+  display: flex;
+  padding-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
 
-  }
-  
+.ville-restau-menil,
+.ville-restau-charonne,
+.ville-restau-folie-meri,
+.ville-restau-cite-rouge {
+  padding-left: 10px;
+  color: black;
+}
 
-  .ville-restau-cite-rouge{
-    position: absolute;
-    left: 28%;
-    color: black;
-  }
+.new-restau {
+  border: 1px solid #99e2d0;
+  border-radius: 5px;
+  background-color: #99e2d0;
+  width: 80px;
+  position: relative;
+  right: -260px;
+  top: -110%;
+  color: green;
+  text-align: center;
+}
+.far {
+  position: absolute;
+  bottom: 10px;
+  font-size: 25px;
+  color: grey;
+  height: 30px;
+  right: 5%;
+  transition: all 0.8s ease;
+}
+.fa-heart:hover {
+  font-weight: 900 !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  overflow: hidden;
+  color: transparent;
+}
 
- 
-  .new-restau{
-    border: 1px solid #99E2D0 ;
-    border-radius: 5px;
-    background-color:#99E2D0 ;
-    width: 80px;
-    position: relative;
-    right: -260px;
-    top: -110%;
-    color: green;
-    text-align: center;
-  }
-  .far{
-    position: absolute;
-    bottom: 10px;
-    font-size: 25px;
-    color: grey;
-    height: 30px;
-    right: 5%;
-    transition: all 0.8s ease;
-  }
-  .fa-heart:hover{
-    font-weight: 900 !important;
-    background-clip: text;
-    -webkit-background-clip:text ;
-    background-image: linear-gradient(to top,#FF79DA,#9356DC );
-    overflow: hidden;
-    color: transparent;
-  }
+.endtext {
+  border: 1px solid #f2f2f2;
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
 
-  
-  
-  
-  
-  .endtext{
-    border:1px solid #F2F2F2;
-    background-color: black;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
-    color: white;
-  }
-  .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
-    padding-top: 40px;
-  }
-  .contact{
-    padding-right: 20px;
-    color: white;
-  }
-  
+.footer-logo {
+  width: 150px;
+  filter: invert(100%); 
+  -webkit-filter: invert(100%);
+}
+.footer-logo,
+.endtext-propo-restau,
+.endtext-partenaire,
+.endtext-memtion,
+.endtext-contact {
+  padding-top: 20px;
+  margin-left: 5%;
+}
+.endtext-contact {
+  color: white;
+}
 
 @media only screen and (max-width: 610px) {
-  
-  
-  
   .btn-retour {
     padding-left: 20px;
     padding-right: 30px;
@@ -340,64 +307,24 @@ a{
   .nav {
     height: 200px;
   }
-  h2{
-    padding-left: 10%;
+  h2 {
+    padding-left: 5%;
   }
   h1 {
     font-size: 20px;
     padding-left: 50px;
     padding-right: 50px;
   }
-  
-  .operation{
+
+  .operation {
     display: block;
   }
-  
-  /*
-  .carte-restau,.restau-photo{
-    width: 80vw;
-  }
-   */
-  .new-restau{
-   
+
+  .new-restau {
     right: 10px;
     top: 5%;
-   
+
     position: absolute;
-  }
- 
-  /*
-  .fa-heart:hover{
-    font-weight: 900 !important;
-    background-clip: text;
-    -webkit-background-clip:text ;
-    background-image: linear-gradient(to top,#FF79DA,#9356DC );
-    overflow: hidden;
-    color: transparent;
-  }*/
-   
-   
-
-  .endtext{
-    flex-direction: column;
-   
-  }
-  .endtext-propo-restau,.endtext-partenaire,.endtext-memtion,.endtext-contact{
-    padding-top: 10px;
-    margin-left: 10%;
-  }
-  .ville-restau-menil, .ville-restau-charonne, .ville-restau-folie-meri {
-    position: absolute;
-    left: 18%;
-    color: black;
-
-  }
-
-
-  .ville-restau-cite-rouge{
-    position: absolute;
-    left: 24%;
-    color: black;
   }
 
 }
