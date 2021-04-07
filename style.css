@@ -184,6 +184,23 @@ a {
   cursor: pointer;
   align-items: center;
 }
+.operation-btn-fct-store{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: #F4EDFF;
+  width: 300px;
+  height: 60px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  font-weight: bold;
+  box-shadow: 1px 1px 1px grey;
+  cursor: pointer;
+  align-items: center;
+
+}
 .operation-btn-fct-logo-texte {
   display: flex;
   width: 90%;
