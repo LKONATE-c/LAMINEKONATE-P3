@@ -36,11 +36,14 @@ body {
   
   header {
     background-color: white;
+   
   }
   
   .header-logo {
     display: flex;
     justify-content: space-around;
+    padding-top: 20PX;
+    padding-bottom: 20px;
   }
   
   .btn-retour-accueil {
@@ -55,7 +58,7 @@ body {
   
   .logo-food {
     height: 30px;
-    width: 150px;
+   
   }
   .photo-plat-restau {
     height: 300px;
@@ -192,7 +195,7 @@ body {
     color: white;
   }
   .conteneur-cadre-repas:hover .cadre-validation-entre {
-    width: 30%;
+    width: 50px;
   }
   
   .conteneur-cadre-repas:hover .fa-check-circle {
@@ -227,12 +230,12 @@ body {
   }
   
   .endtext {
-    border: 1px solid #f2f2f2;
+    
     background-color: black;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    color: white;
+    color: #f7F5F6;
   }
   
   .footer-logo {
@@ -249,7 +252,8 @@ body {
     margin-left: 5%;
   }
   .endtext-contact {
-    color: white;
+    color: #f7F5F6;
+    padding-bottom: 20px;
   }
   
   @media only screen and (max-width: 630px) {
@@ -261,6 +265,9 @@ body {
   
     .fa-heart {
       right: 7%;
+    }
+    .conteneur-cadre-repas:hover .cadre-validation-entre {
+      width: 30%;
     }
   
     .bouton-de-commande {

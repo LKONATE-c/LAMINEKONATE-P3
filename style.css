@@ -73,16 +73,18 @@ h3 {
 h1 {
   font-size: 1.5rem;
   text-align: center;
-  font-family: "Shrikhand", cursive, arial, sans-serif;
+  font-family: "Shrikhand", arial, sans-serif;
 }
 
 header {
-  margin-bottom: 20px;
+  
 }
 
 .header-logo {
   display: flex;
   justify-content: space-around;
+  padding-top: 20PX;
+  padding-bottom: 20px;
 }
 
 .header-btn-retour {
@@ -94,7 +96,7 @@ header {
 
 .logo-food {
   height: 30px;
-  width: 150px;
+ 
 }
 
 .presentation {
@@ -285,10 +287,11 @@ a {
   background-color: #99e2d0;
   width: 80px;
   position: relative;
-  right: -260px;
+  right: -240px;
   top: -110%;
   color: green;
   text-align: center;
+  padding: 5px 5px 5px 5px;
 }
 .far {
   position: absolute;
@@ -309,12 +312,12 @@ a {
 }
 
 .endtext {
-  border: 1px solid #f2f2f2;
+ 
   background-color: black;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
-  color: white;
+  color: #f7F5F6;
 }
 
 .footer-logo {
@@ -331,7 +334,8 @@ a {
   margin-left: 5%;
 }
 .endtext-contact {
-  color: white;
+  color: #f7F5F6;
+  padding-bottom: 20px;
 }
 
 @media only screen and (max-width: 610px) {
