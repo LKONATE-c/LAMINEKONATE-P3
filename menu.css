@@ -194,6 +194,8 @@ header {
   transition: transform 2s;
   transform: rotate(0);
   color: white;
+  font-size: 1.8rem;
+  font-weight: 900;
 }
 .conteneur-cadre-repas:hover .cadre-validation-entre {
   width: 150px;
@@ -265,7 +267,10 @@ header {
     right: 7%;
   }
   .conteneur-cadre-repas:hover .cadre-validation-entre {
-    width: 15%;
+    width: 30%;
+  }
+  .fa-check-circle{
+    font-size: 1.3rem;
   }
 
   .bouton-de-commande {
